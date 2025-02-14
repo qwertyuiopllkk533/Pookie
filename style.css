@@ -1,0 +1,84 @@
+body {
+    background-color: #ffcccc; /* Light red background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+}
+
+.love-message {
+    font-size: 3em;
+    color: #c70000; /* Dark red */
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.valentine-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hearts {
+    position: relative;
+    height: 200px;
+}
+
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4d4d; /* Bright red */
+    transform: rotate(45deg);
+    animation: throbbing 1.5s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4d4d; /* Bright red */
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
+
+@keyframes throbbing {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}

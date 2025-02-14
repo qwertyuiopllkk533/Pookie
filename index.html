@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Pookie</title>
+    <style>
+        body {
+            background-color: pink;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2em;
+        }
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('heart.png') no-repeat center center;
+            background-size: contain;
+            animation: throbbing 1s infinite;
+        }
+        @keyframes throbbing {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        #video {
+            display: none;
+            margin-top: 20px;
+            align-self: center;
+            align-items:flex-end;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 30px;
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        #input {
+            border-radius: 30px;
+            font-size: 400px;
+        }
+         /* Styling placeholder text with a different color */
+         input[type="password"] {
+        width: 100%; /* Full width */
+        max-width: 400px; /* Maximum width */
+        padding: 15px; /* Padding for spacing */
+        font-size: 18px; /* Larger font size */
+        border: 2px solid #ff4d4d; /* Border color */
+        border-radius: 25px; /* Rounded corners */
+        outline: none; /* Remove default outline */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        transition: border-color 0.3s; /* Smooth transition for border color */
+    }
+
+    input[type="password"]:focus {
+    border-color: #c70000; /* Darker red on focus */
+}
+img {
+  width: 50%;
+  height: auto;
+  border: 3px solid black;
+  padding: 1px;
+}
+video{
+    align-content  :center;
+}
+h5{
+    color: rgb(201, 19, 19);
+    font-size:xx-large;
+}
+hr{
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <u><h1>Dear Pookie</h1></u>
+    <h5>I love you from the bottom of my heart.<br>even if you arent the most beautiful girl,so am i not the most handsome person.  Even if you arent perfect,i love the imperfection in you.<br>I dont know if we will be together forever but i certainly wish you are mine forever  I have said it hundred times but ill say it again and again  
+    I AM IN LOVE WITH YOU,<br   >your cute smile,your innocent mind,your badmos kaand,your personality  (your body is also great AHEM)<br>  Thank you for being there for me,if i do something wrong,U HAVE EVERY RIGHT TO SLAP ME AND SCOLD ME  <br>
+    i love your thick tighs mommy  (so dont be insecure about them okay).<br>if you are thinking of me i am also probably thinking of you
+    At the end of day,i wish to be you and me,  <br>i want you on your good day and even more on your bad day
+       i dont know what to say anymore so less just continue. I have a suprise for you at the end of this website(it's just for u hehe)</h5>
+<hr>
+    
+    <div id="images" style="margin-top: 20px;" class="pho">
+        <img src="1.png" style="margin: 20px;">
+        <img src="2.png" style="margin: 20px;">
+        <img src="3.png" style="margin: 20px;">
+        <img src="4.png" style="margin: 20px;">
+        <img src="5.png" style="margin: 20px;">
+    </div>
+    <hr>
+    <a href="https://drive.google.com/file/d/1sdZZD0uVlv2aahXHt9mkbUYLtj9xBG-Z/view?usp=drive_link"><button class="button">CLICK FOR SUPRISE</button></a>
+    
+
+
+    <script>
+
+        function createHearts() {
+            for (let i = 0; i < 10; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.style.left = Math.random() * window.innerWidth + 'px';
+                heart.style.top = Math.random() * window.innerHeight + 'px';
+                document.body.appendChild(heart);
+                heart.onclick = function() {
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = Math.random() * window.innerHeight + 'px';
+                };
+            }
+        }
+    </script>
+</body>
+</html>

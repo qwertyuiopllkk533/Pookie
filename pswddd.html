@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Pookie</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2em;
+        }
+        h1{
+            color: red;
+        }
+        h3{
+            color: red;
+        }
+        .container{
+            display: flex; 
+            justify-content: center;
+        }
+        .photoa {
+            height: 450px;
+            width: auto;
+            border:2px solid black; padding: 1px;
+        }
+        .hehe{
+            background-color: red;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            box-shadow: none;
+        }
+        .yep {
+            background-color: red;
+            color: white;
+            padding: 30px;
+        }
+        h4{
+            color: red;
+        }
+        input::placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>A TEST FOR U HEHE</h1>
+    <h3>enter the date of october we started dating</h3>
+    <h4>With this,you are agreeing that you are my pookie and will always be each others</h4>
+    <input type="password" id="password" placeholder="SAID LOVE YOU A LOT OF TIMES" class="yep">
+    <button onclick="checkPassword()" class="hehe">PROVE</button>
+    <div class="container">
+    <div id="images" style="margin-top: 20px;">
+        <img src="heart.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/66e07425-5475-4d4d-ad6a-490459fcae76.jpg" style="margin: 20px;" class="photoa">
+        <img src="photosss/award 1.jpg" style="margin: 20px;" class="photoa">
+        <img src="photosss/balcony.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/bday ty sawara.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/bed.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/car.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/chashme.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/firework.jpg" style="margin: 20px;"class="photoa">
+        <img src="photosss/mushroom.jpg" style="margin: 20px;"class="photoa">
+        <img src="topi.webp" style="margin: 20px;"class="photoa">
+        <img src="khaby.jpg" style="margin: 20px;"class="photoa">
+        <img src="spooderman.jpg" style="margin: 20px;"class="photoa">
+        <img src="firework.webp" style="margin: 20px;"class="photoa">
+        <img src="iphone.webp" style="margin: 20px;"class="photoa">
+        <img src="pookie depressed.webp" style="margin: 20px;"class="photoa">
+        <img src="trandiotna.webp" style="margin: 20px;"class="photoa">
+        
+    </div>
+    </div>
+    <h4>This site is strictly for pookie and those who got permission from pookie.</h4>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password == '9') {
+                window.location.href="paper.html"
+                document.getElementById('images').style.display = 'block';
+                createHearts();
+                alert("YAY U REMEBERED");                
+            } else {
+                alert('Wrong password!');
+            }
+        }
+    </script>
+    </body>
+</html>
